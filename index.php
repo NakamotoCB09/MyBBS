@@ -1,6 +1,6 @@
 <?php
 try{
-    // データベースへ接続する
+    // データベースへ接続
     $pdo = new PDO('mysql:dbname=ppftech_db1;host=mysql1.php.xdomain.ne.jp;charset=utf8','ppftech_user1','user1234',
     [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,]);
