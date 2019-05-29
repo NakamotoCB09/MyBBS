@@ -20,16 +20,10 @@ header('Content-Type: text/html; charset=utf-8');
         <title>C_B_BBS</title>
         <script tipe="text/javascript">
         function check(){
-            var flag = 0;
             if(document.form1.name.value == ""){
-                flag = 1;
-            }else if(document.form1.post_text.value == ""){
-                flag = 2;
-            }
-            if(flag == 1){
                 window.alert('その方、名を名乗れぃ（上様）');
                 return false;
-            }else if(flag == 2){
+            }else if(document.form1.post_text.value == ""){
                 window.alert('何か申してみよ（寛容）');
                 return false;
             }else{
